@@ -1,6 +1,12 @@
-import './style.css'
+const humburger = document.getElementById('nav-humburger')
+let state = false;
 
-document.querySelector('#app').innerHTML = `
-  <h1>Hello Vite!</h1>
-  <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
-`
+humburger.addEventListener('click', function() {
+  const listMenu = document.getElementById('nav-list-mobile');
+  if(state) {
+    listMenu.classList.remove("nav-list-mobile--show")
+  }else {
+    state = true;
+    listMenu.classList.add("nav-list-mobile--show")
+  }
+})
