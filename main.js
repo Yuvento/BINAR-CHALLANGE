@@ -16,14 +16,14 @@ humburger.addEventListener('click', function() {
 let cek = (n,b,p) => {
   let nilai = b*3 - (n-b);
   if(nilai>=p){
-      console.log("YES");
+      return "YES";
   }
   else{
-      console.log("No");
+      return "NO";
   }
 }
-cek(6,3,6);
-cek(5,2,4);
+console.log(cek(6,3,6));
+
 
 //Soal-2 Perulangan(Pinjam Uang)
 let hitung = (k,m,n) => {
@@ -33,10 +33,10 @@ let hitung = (k,m,n) => {
       total+=k;
       k+=inc;
   }
-  console.log(total>m ? total-m : 0);
+  return (total>m ? total-m : 0);
 }
 
-hitung(3,17,4)
+console.log(hitung(3,17,4));
 
 //Soal-3 Array(item terkecil)
 let cari = (arr) => {
@@ -46,8 +46,8 @@ let cari = (arr) => {
           min=arr[i];
       }
   }
-  console.log(min);
+  return min;
 }
 
-cari([9,4,3,5,4,1,4,2]);
-cari([2,4,7,28,9,10,3]);
+console.log(cari([9,4,3,5,4,1,4,2]));
+console.log(cari([2,4,7,28,9,10,3]));
