@@ -96,5 +96,131 @@ function smallest(arr) {
 console.log(smallest(arr));
 
 
+// 7 : Jumlah Digit Angka
+function solution_7(num){
+  // tulis jawaban disini
+  var total = 0; 
+  for(var p = 0; p < (num.toString()).length; p++){
+      total += parseInt((num.toString())[p])
+  }
+  return total;
+}
+
+// 8 : Tabungan
+function solution_8(n, m){
+  //tulis jawabanmu disini
+  var person1 = n;
+  var person2 = m;
+  var tahun = 0;
+  while(person1 <= person2){
+      person1 *= 3;
+      person2 *= 2;
+      tahun++;
+  }
+  return tahun;
+}
+
+// 9 : Faktorial
+function solution(n){
+  // tulis jawabanmu disini
+  var faktorial = 1;
+  for(var i = n; i > 0; i--){
+      faktorial *= i;
+  }
+  return faktorial;
+}
+
+// 10 : Fibonaci
+
+function solution(){
+  // tulis jawabanmu disini
+
+}
+
+// 11 : Pinjam uang
+function solution(k, m, n){
+  // tulis jawabanmu disini
+  var totalHarga = 0;
+  for(var i = 1; i <= n; i++){
+      totalHarga += i*k;
+  }
+  if(totalHarga >= m){
+      return totalHarga - m;
+  } else {
+      return 0;
+  }
+  
+}
+
+// 13 : Membandingkan 2 array
+// function solution(arr1, arr2){
+//     // tulis jawabanmu disini
+     // MAKSUD DARI STRING OUTPUT MASIH RANCU
+//     var consArr1 = 0;
+//     var consArr2 = 0;
+//     for(var p = 0; p < arr1.length; p++){
+//         if(arr1[p] == arr2[p]){
+//            consArr1++;
+//            consArr2++; 
+//         } else if( arr1[p] > arr2[p]){
+//             consArr1++;
+//         } else {
+//             consArr2++;
+//         }
+//     }
+//     return consArr1 + " : " + consArr2
+// }
+
+// 14 : Array 2 dimensi
+function solution(arr){
+  // tuliskan jawabanmu disini
+  var countAll = 0;
+  for(var p = 0; p < arr.length; p++){
+      var count1 = 0;
+      for(var k = 0; k < arr[p].length; k++){
+          if(arr[p][k]== 1){
+              count1++;
+          }
+      }
+      if(count1 >= 2){
+          countAll++;
+      }
+  }
+  return countAll;
+}
+
+// 15 : Unik Item
+function solution(arr){
+  //tulis jawabanmu disini
+  var count = 0;
+  for(var i = 0; i < arr.length-1; i++){
+      var same = 0;
+      for(var k = i+1; k < arr.length; k++){
+          if(arr[i]== arr[k]){
+              same++;
+          }
+      }
+      if(same >0){
+          count++;
+      }
+  }
+  return count;
+}
+
+// 16 : Tahun genap atau ganjil
+function solution_16(arr){
+  // tulis jawabanmu disini
+  // Kunci Salah atau saya yang salah //
+  const newArr = [];
+  for(var p = 0; p < arr.length; p++){
+      var count = 0
+      for(var k = 0; k < arr[p].length; k++){
+          count += parseInt(arr[p][k]);
+      }
+      count % 2 == 0 ? newArr[p] = "Genap" : newArr[p] = "Ganjil";
+  }
+  return newArr;
+}
+
 
 
