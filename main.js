@@ -262,3 +262,33 @@ function fizzBuzz(n) {
 }
 
 fizzBuzz(15);
+
+//Imdadu mulaiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+
+// PENGONDISIAN (Coding Exercise 3: FizzBuzz)
+function solution(n){
+  // tulis jawabanmu disini
+  if ((n % 5 === 0) && (n % 3 === 0)) return 'FizzBuzz';
+  else if (n % 5 === 0) return 'Fizz';
+  else if (n % 3 === 0) return 'Buzz';
+  else return -1
+}
+
+// PERULANGAN (Coding Exercise 6: Menghitung Total)
+function solution(num){
+  // tulis jawaban disini
+  let hasil = 0;
+  for (let i = hasil; i <= num; i++) {
+      hasil += i;
+  }
+  return hasil;
+}
+
+// ARRAY (Coding Exercise 21: Item terkecil)
+function solution(arr){
+  // tulis jawabanmu disini
+  arr.sort((a, b)=> a - b);
+  return arr[0];
+}
+
+// Imdadu selesaiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
