@@ -381,3 +381,12 @@ function solution(arr){
 
 
 }
+// kebalikan
+function solution (str1,str2){
+  let bolak =  str2.split("").reverse().join("")
+
+  if(str1===bolak) return "YES"
+  else return "NO"
+}
+
+console.log(solution("kode","edo3"))
