@@ -287,8 +287,23 @@ function solution(num){
 // ARRAY (Coding Exercise 21: Item terkecil)
 function solution(arr){
   // tulis jawabanmu disini
-  arr.sort((a, b)=> a - b);
+  // arr.sort((a, b)=> a - b);
   return arr[0];
 }
 
 // Imdadu selesaiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+
+let memotong = (kalimat, angka) => {
+  let kalimatSplit = kalimat.split(" ");
+  let hasil =""
+
+  for (let index = 0; index < angka; index++) {
+    hasil += kalimatSplit[index];
+    hasil +=' ';
+  }
+
+  hasil = hasil.trim();
+  return hasil;
+}
+
+console.log(memotong("Hari ini hari selasa bukan senin", 3));
