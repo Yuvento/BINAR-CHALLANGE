@@ -120,5 +120,10 @@ function smallest(arr) {
 console.log(smallest(arr));
 
 
-
+// tugas udemy String Ario
+function solution(ip){
+  // tulis jawabanmu disini
+  ip = ip.replaceAll(".","()");
+  return ip;
+}
 
