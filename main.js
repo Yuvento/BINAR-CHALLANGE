@@ -244,9 +244,7 @@
 //       count % 2 == 0 ? newArr[p] = "Genap" : newArr[p] = "Ganjil";
 //   }
 //   return newArr;
-// }
-
-<<<<<<< HEAD
+// }HEAD
 
 
 // // 17 Fizzbuzz: 
@@ -280,7 +278,6 @@ function kataTerpanjang(value) {
   console.log('Kata terpanjang adalah : ', str);
   console.log('Jlh karakter : ', str.length);
   
-=======
 fizzBuzz(15);
 
 //Imdadu mulaiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
@@ -307,12 +304,26 @@ function solution(num){
 // ARRAY (Coding Exercise 21: Item terkecil)
 function solution(arr){
   // tulis jawabanmu disini
-  arr.sort((a, b)=> a - b);
+  // arr.sort((a, b)=> a - b);
   return arr[0];
 }
 
 // Imdadu selesaiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
 
+let memotong = (kalimat, angka) => {
+  let kalimatSplit = kalimat.split(" ");
+  let hasil =""
+
+  for (let index = 0; index < angka; index++) {
+    hasil += kalimatSplit[index];
+    hasil +=' ';
+  }
+
+  hasil = hasil.trim();
+  return hasil;
+}
+
+console.log(memotong("Hari ini hari selasa bukan senin", 3));
 
 //yuvento
 // angka genap
@@ -410,4 +421,3 @@ function solution (str1,str2){
 }
 
 console.log(solution("kode","edo3"))
->>>>>>> 1210d374a267edeb5a2f9fc7ec75986a9b291934
