@@ -345,31 +345,6 @@ function solution(n){
     else return "E";
 }
 
-
-// fizzbuzz
-function solution(n){
-  // tulis jawabanmu disini
-
-  if(n%5===0&&n%3===0) return "FizzBuzz";
-  else if(n%5===0) return "Fizz";
-      else if(n%3===0) return "Buzz";
-          else return -1;
-          
-}
-
-//  serifikasi
-
-function solution(n, b, p){
-  let nilai = n - b;
-  let total = nilai*-1;
-  let total2 = b*3; 
-  if((total2+total)>=p) return "YES";
-  else return "NO";
-
-
-  
-}
-
 // narik uang
 function solution(x, y){
   // tulis jawabanmu disini
@@ -421,3 +396,10 @@ function solution (str1,str2){
 }
 
 console.log(solution("kode","edo3"))
+
+// tugas udemy String Ario
+function solution(ip){
+  // tulis jawabanmu disini
+  ip = ip.replaceAll(".","()");
+  return ip;
+}
