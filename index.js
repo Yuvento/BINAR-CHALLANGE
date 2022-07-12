@@ -87,12 +87,13 @@
 
 
 
-function solution (str1,str2){
-    let bolak =  str2.split("").reverse().join("")
+// function solution (str1,str2){
+//     let bolak =  str2.split("").reverse().join("")
 
-    if(str1===bolak) return "YES"
-    else return "NO"
-}
+//     if(str1===bolak) return "YES"
+//     else return "NO"
+// }
 
-console.log(solution("kode","edo3"))
+// console.log(solution("kode","edo3"))
+
 
