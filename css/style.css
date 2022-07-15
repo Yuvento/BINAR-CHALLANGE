@@ -141,11 +141,28 @@ a{
     margin-left: 2rem;
 }
 
+.Why{
+    font-family: 'Arial';   
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5.4rem;
+    line-height: 3.6rem;
+}
+
+.Why2{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2rem;
+    margin-top: 4rem;
+}
+
 @media only screen and (min-width: 600px) {
    
     .Container{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         
       
     }
@@ -157,6 +174,7 @@ a{
 
     .section-service{
         display: flex;
+        justify-content: center;
         font-family: Arial, Helvetica, sans-serif;
         font-size: large;
         font-weight: 700;
@@ -171,8 +189,26 @@ a{
     }
 
 
-    
-    
+   .product{
+        margin-top: 8rem;
+        display: flex;
+        justify-content: center; 
+        text-align: left;
+   }
+
+   .Why{
+        margin-right: 110rem;
+    }
+
+    .Why2{
+        margin-right: 85rem;
+    }
+
+  
+
+
+   
+ 
    
 }
 
