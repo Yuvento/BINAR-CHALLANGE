@@ -147,6 +147,7 @@ a{
     font-weight: 700;
     font-size: 5.4rem;
     line-height: 3.6rem;
+    margin-top: 2rem;
 }
 
 .Why2{
@@ -156,6 +157,59 @@ a{
     font-size: 2.4rem;
     line-height: 2rem;
     margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.class-container{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    height: auto;
+}
+
+.card{
+    margin-bottom: 2rem;
+}
+
+.icons{
+    width: 9%;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.icons-paraf{
+    margin-left: 2rem;
+    margin-top: 2.7rem;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2rem;
+}
+
+.icon-paraf{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    
+}
+
+.test{
+    margin-top: 4rem;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.test2{
+    margin-top: 2rem;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8rem;
 }
 
 @media only screen and (min-width: 600px) {
@@ -204,7 +258,44 @@ a{
         margin-right: 85rem;
     }
 
-  
+    .class-container{
+        display: grid;
+        grid-template-columns: 30rem 30rem 30rem 30rem;
+        grid-template-rows: 20rem  ;
+        justify-content: center;
+        margin-top: 5rem;
+        
+    }
+    
+    .card{
+        margin-left:2rem ;
+    }
+    
+
+    .icons-paraf{
+        margin-left: 2rem;
+        margin-top: 2rem;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    
+    .icon-paraf{
+        margin-left: 2rem;
+        margin-top: 0.5rem;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.5rem;
+        
+    }
+
+    .test{
+        margin-top: 6rem;
+    }
+
 
 
    
